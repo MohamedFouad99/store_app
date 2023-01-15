@@ -3,7 +3,7 @@
 class ProductModel {
   int? id;
   String? title;
-  double? price;
+  String? price;
   String? description;
   String? category;
   String? image;
@@ -21,7 +21,7 @@ class ProductModel {
   ProductModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'];
-    price = json['price'];
+    price = json['price'].toString();
     description = json['description'];
     category = json['category'];
     image = json['image'];
@@ -50,7 +50,7 @@ class Rating {
   Rating({required this.rate, required this.count});
 
   Rating.fromJson(Map<String, dynamic> json) {
-    rate = json['rate'];
+//    rate = json['rate'];
     count = json['count'];
   }
 
