@@ -1,7 +1,7 @@
 // ignore_for_file: unnecessary_new, prefer_collection_literals, unnecessary_this
 
 class ProductModel {
-  int? id;
+  dynamic? id;
   String? title;
   String? price;
   String? description;
